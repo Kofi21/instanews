@@ -4,23 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Intro to jQuery</title>
+    <link rel="stylesheet" href="./build/css/main.css" />
+    <title>Instanews</title>
   </head>
   <body>
-    <div class="main">
-      <p>Text</p>
-    </div>
-    <div class="main2">
-      <p>Text2</p>
-    </div>
-
+    <header>
+      <div class="logo">
+        <object type="image/svg+xml" data="./images/nyt-logo.svg">
+          NY Times
+        </object>
+      </div>
+      <div class="main-menu">
+        <p>Choose a section:</p>
+        <select class="drop-down">
+          <option value="selected">Sections ...</option>
+          <option value="arts">Arts</option>
+          <option value="automobiles">Automobiles</option>
+          <option value="books">Books</option>
+          <option value="business">Business</option>
+          <option value="fashion">Fashion</option>
+          <option value="food">Food</option>
+        </select>
+      </div>
+    </header>
+    <!-- <div class="main-menu"></div> -->
+    <section class="main-content"></section>
+    <footer>
+      <p>&copy Copyright 2016 INSTANEWS</p>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-    <script src="app.js" ;></script>
-    <script src="style.css" ;></script>
+    <script src="./js/app.js" ;></script>
   </body>
 </html>

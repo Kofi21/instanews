@@ -130,62 +130,18 @@ table {
 
 //CUSTOM STYLES
 
-$main-color: #3366ff;
 $main-font: "Open sans";
-$base-margin: 1.5em;
-$tablet-width: 320px;
-$desktop-width: 780px;
+$tablet-width: 600px;
+$desktop-width: 1240px;
 
 @mixin tablet {
-    @media (min-width: $tablet-width){
-        @content;
-    }
-        
+  @media (min-width: $tablet-width) {
+    @content;
+  }
 }
 
 @mixin desktop {
-    @media (min-width: $desktop-width) {
-        @content;
-    }
-}
-
-%active {
-  background: green;
-  color: red;
-}
-
-@mixin primary-links {
-  color: blue;
-  text-decoration: underline;
-}
-
-.main {
-  height: 100px;
-  width: 100px;
-  background-color: $main-color;
-  margin: $base-margin * 2;
-  @include tablet {
-      background-color: yellow;
+  @media (min-width: $desktop-width) {
+    @content;
   }
-  @include desktop {
-      background-color: green;
-  }
-  p {
-    color: white;
-    font-family: $main-font;
-    @include desktop [
-        background-color: red;
-    ]
-  }
-  &:hover {
-    background: blue;
-  }
-}
-
-.main2 {
-  @include tablet {
-      background-color: yellow;
-  }
-  width: 200px;
-  height: 200px;
 }
