@@ -115,10 +115,10 @@ footer {
     justify-content: left;
     padding-left: 30px;
   }
-  color: white;
+  // color: white;
   display: flex;
   justify-content: center;
-  color: #c2c2c2;
+  // color: #c2c2c2;
   height: 20px;
 
   // margin: 75%;
@@ -127,6 +127,21 @@ footer {
   font-size: large;
 }
 
+.bottom-text {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.header-change {
+  @include tablet {
+    margin-right: 20px;
+
+    object {
+      width: 40%;
+    }
+  }
+}
 .main-content {
   @include tablet {
     grid-template-columns: 1fr 1fr 1fr;
@@ -162,14 +177,5 @@ footer {
     padding-top: 10px;
     text-align: left;
     line-height: 25px;
-  }
-  .header-change {
-    @include tablet {
-      margin-right: 20px;
-
-      object {
-        width: 40%;
-      }
-    }
   }
 }

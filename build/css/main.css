@@ -195,10 +195,8 @@ header {
     align-self: center; } }
 
 footer {
-  color: white;
   display: flex;
   justify-content: center;
-  color: #c2c2c2;
   height: 20px;
   padding-top: 20px;
   padding-bottom: 50px;
@@ -207,6 +205,18 @@ footer {
     footer {
       justify-content: left;
       padding-left: 30px; } }
+
+.bottom-text {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0); }
+
+@media (min-width: 600px) {
+  .header-change {
+    margin-right: 20px; }
+    .header-change object {
+      width: 40%; } }
 
 .main-content {
   display: grid;
@@ -238,8 +248,3 @@ footer {
     padding-top: 10px;
     text-align: left;
     line-height: 25px; }
-  @media (min-width: 600px) {
-    .main-content .header-change {
-      margin-right: 20px; }
-      .main-content .header-change object {
-        width: 40%; } }

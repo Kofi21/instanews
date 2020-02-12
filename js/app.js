@@ -4,6 +4,9 @@ $(function() {
 
     let userInput = $("select").val();
 
+    if (userInput === "selected") {
+      $("footer").addClass("bottom-text");
+    }
     let url = `https://api.nytimes.com/svc/topstories/v2/${userInput}.json?api-key=2TZAPhtSJO2dMB9VrL2DdoDO7jl1G6Os`;
 
     console.log(url);
@@ -34,11 +37,11 @@ $(function() {
           $(".main-content").empty();
         });
 
-        // $("header").css("height", "10%");
+        $("header").css("height", "10%");
 
-        // $("header").css("margin-bottom", "20px");
+        $("header").css("margin-bottom", "20px");
 
-        // $("header").css("margin-top", "20px");
+        $("header").css("margin-top", "20px");
 
         $(".logo").addClass("header-change");
       });
