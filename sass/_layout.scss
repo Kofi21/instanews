@@ -127,12 +127,12 @@ footer {
   font-size: large;
 }
 
-.bottom-text {
-  position: fixed;
-  bottom: 10px;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
+// .bottom-text {
+//   position: fixed;
+//   bottom: 10px;
+//   left: 50%;
+//   transform: translate(-50%, 0);
+// }
 .header-change {
   @include tablet {
     margin-right: 20px;
@@ -178,4 +178,10 @@ footer {
     text-align: left;
     line-height: 25px;
   }
+
+  // .article-text:hover {
+  //   transform-origin: 0 bottom 1;
+  //   transition: transform 0.5s linear;
+  //   transform: scale(1, 1);
+  // }
 }

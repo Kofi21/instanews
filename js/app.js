@@ -5,7 +5,8 @@ $(function() {
     let userInput = $("select").val();
 
     if (userInput === "selected") {
-      $("footer").addClass("bottom-text");
+      $(".logo").removeClass("header-change");
+      $("header").css("height", "700px");
     }
     let url = `https://api.nytimes.com/svc/topstories/v2/${userInput}.json?api-key=2TZAPhtSJO2dMB9VrL2DdoDO7jl1G6Os`;
 
@@ -30,8 +31,10 @@ $(function() {
            <figure class="article-image">
                <img src="${articleImage}">
                <a href="${url}" target="new">
-               <p class="article-text">${Description}<p></a>
+               <p class="article-text">${Description}</p></a>
            </figure>`);
+
+        // $(".article-text").hide();
         //Remove previous articles
         $(".drop-down").on("change", function() {
           $(".main-content").empty();
@@ -53,4 +56,33 @@ $(function() {
       // });
     });
   });
+
+  // $(function() {
+  //   $(".main-content").mouseenter(function() {
+  //     $(this)
+  //       .find("p")
+  //       .slideToggle(500);
+  //   });
+  // });
+
+  // $(function() {
+  //   $(".main-content").mouseleave(function() {
+  //     $(this)
+  //       .find("p")
+  //       .slideToggle(500);
+  //   });
+  // });
+
+  $(".main-content").hover(
+    function() {
+      $(".article-text").show();
+    },
+    function() {
+      $(".article-text").hide();
+    }
+  );
+
+  // $(".main-content").on("hover", "img", function(event) {
+  //   console.log("hovvered over this: ", event);
+  // });
 });

@@ -206,12 +206,6 @@ footer {
       justify-content: left;
       padding-left: 30px; } }
 
-.bottom-text {
-  position: fixed;
-  bottom: 10px;
-  left: 50%;
-  transform: translate(-50%, 0); }
-
 @media (min-width: 600px) {
   .header-change {
     margin-right: 20px; }
