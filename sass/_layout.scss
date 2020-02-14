@@ -102,6 +102,15 @@ header {
     align-self: center;
     margin-top: 10px;
   }
+  .loader {
+    display: none;
+    width: 5%;
+    height: 5%;
+    align-self: center;
+    padding-left: 10px;
+    padding-top: 50px;
+    // height: auto;
+  }
 }
 
 .main-menu {

@@ -189,6 +189,13 @@ header {
     color: white;
     align-self: center;
     margin-top: 10px; }
+  header .loader {
+    display: none;
+    width: 5%;
+    height: 5%;
+    align-self: center;
+    padding-left: 10px;
+    padding-top: 50px; }
 
 @media (min-width: 600px) {
   .main-menu {

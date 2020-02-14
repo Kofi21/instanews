@@ -14,7 +14,16 @@ $(function() {
     $.ajax({
       dataType: "JSON",
       method: "GET",
-      url: url
+      url: url,
+
+      beforeSend: function() {
+        $(".loader").show(); // Handle the beforeSend event
+      },
+      complete: function() {
+        $(".loader").hide();
+        // Handle the complete event
+      }
+      // ......
     }).done(function({ results }) {
       $.each(results, function(index, value) {
         // console.log(results);
