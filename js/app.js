@@ -73,14 +73,14 @@ $(function() {
   //   });
   // });
 
-  $(".main-content").hover(
-    function() {
-      $(".article-text").show();
-    },
-    function() {
-      $(".article-text").hide();
-    }
-  );
+  // $(".main-content").hover(
+  //   function() {
+  //     $(".article-text").show();
+  //   },
+  //   function() {
+  //     $(".article-text").hide();
+  //   }
+  // );
 
   // $(".main-content").on("hover", "img", function(event) {
   //   console.log("hovvered over this: ", event);

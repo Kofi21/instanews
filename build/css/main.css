@@ -234,6 +234,7 @@ footer {
     height: 400px;
     grid-column-start: 1; }
   .main-content .article-text {
+    opacity: 0;
     position: absolute;
     bottom: 0px;
     grid-column-start: 1;
@@ -242,3 +243,5 @@ footer {
     padding-top: 10px;
     text-align: left;
     line-height: 25px; }
+  .main-content .article-text:hover {
+    opacity: 1; }
