@@ -26,12 +26,10 @@ $(function() {
       // ......
     }).done(function({ results }) {
       $.each(results, function(index, value) {
-        // console.log(results);
         let articleImage = value.multimedia[0].url;
-        console.log(articleImage);
+
         let url = value.Url;
         let Description = value.abstract;
-        console.log(value.abstract);
 
         if (index === 12) return false;
 
@@ -43,7 +41,6 @@ $(function() {
                <p class="article-text">${Description}</p></a>
            </figure>`);
 
-        // $(".article-text").hide();
         //Remove previous articles
         $(".drop-down").on("change", function() {
           $(".main-content").empty();
@@ -57,41 +54,6 @@ $(function() {
 
         $(".logo").addClass("header-change");
       });
-      // .fail(function() {
-      //   $("").append("Sorry there was an error.");
-      // })
-      // .always(function() {
-      //   $("").append("Thanks for using our API");
-      // });
     });
   });
-
-  // $(function() {
-  //   $(".main-content").mouseenter(function() {
-  //     $(this)
-  //       .find("p")
-  //       .slideToggle(500);
-  //   });
-  // });
-
-  // $(function() {
-  //   $(".main-content").mouseleave(function() {
-  //     $(this)
-  //       .find("p")
-  //       .slideToggle(500);
-  //   });
-  // });
-
-  // $(".main-content").hover(
-  //   function() {
-  //     $(".article-text").show();
-  //   },
-  //   function() {
-  //     $(".article-text").hide();
-  //   }
-  // );
-
-  // $(".main-content").on("hover", "img", function(event) {
-  //   console.log("hovvered over this: ", event);
-  // });
 });

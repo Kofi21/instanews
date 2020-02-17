@@ -82,7 +82,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // margin-top: 25%;
   height: 700px;
 
   .main-menu p {
@@ -90,11 +89,7 @@ header {
   }
   .drop-down {
     font-size: large;
-    //   width: 125px;
-    //   align-self: center;
-    //   margin-top: 10px;
-
-    // background-color: red;
+x
   }
 
   p {
@@ -109,7 +104,7 @@ header {
     align-self: center;
     padding-left: 10px;
     padding-top: 50px;
-    // height: auto;
+   
   }
 }
 
@@ -124,24 +119,18 @@ footer {
     justify-content: left;
     padding-left: 30px;
   }
-  // color: white;
+ 
   display: flex;
   justify-content: center;
-  // color: #c2c2c2;
   height: 20px;
 
-  // margin: 75%;
+
   padding-top: 20px;
   padding-bottom: 50px;
   font-size: large;
 }
 
-// .bottom-text {
-//   position: fixed;
-//   bottom: 10px;
-//   left: 50%;
-//   transform: translate(-50%, 0);
-// }
+
 .header-change {
   @include tablet {
     margin-right: 20px;
@@ -187,9 +176,7 @@ footer {
     padding-top: 10px;
     text-align: left;
     line-height: 25px;
-    // transform-origin: 0 bottom 1;
-    // transition: transform 0.5s linear;
-    // transform: scale(1, 1);
+
   }
 
   .article-text:hover {
